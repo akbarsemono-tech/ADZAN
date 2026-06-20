@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akbar Semono | Digital Solutions</title>
+    <!-- Import Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #a855f7;
+            --dark: #1e293b;
+            --light: #f8fafc;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #f1f5f9;
+            color: var(--dark);
+            margin: 0;
+            line-height: 1.6;
+            animation: fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+        .header {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border-radius: 0 0 50px 50px;
+        }
+
+        h1, h2, h3 { font-family: 'Lexend', sans-serif; }
+
+        .container { max-width: 900px; margin: -50px auto 50px; padding: 0 20px; }
+
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover { transform: translateY(-10px); }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: 0.3s;
+            margin-top: 15px;
+        }
+
+        .btn:hover { background: var(--secondary); transform: scale(1.05); }
+
+        .footer { text-align: center; padding: 20px; color: #64748b; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Produk Digital Kreatif</h1>
+        <p>Solusi cerdas untuk mempercepat produktivitas Anda.</p>
+    </div>
+
+    <div class="container">
+        <div class="card-grid">
+            <!-- Card 1 -->
+            <div class="card">
+                <h3>🎨 Template Canva</h3>
+                <p>Koleksi desain estetik untuk media sosial, CV, dan presentasi. Siap pakai, tinggal edit!</p>
+                <a href="mailto:akbarsemono@gmail.com?subject=Order%20Canva" class="btn">Pesan Sekarang</a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <h3>📊 Template Excel</h3>
+                <p>Sistem keuangan otomatis yang rapi. Kelola pemasukan & pengeluaran tanpa ribet.</p>
+                <a href="mailto:akbarsemono@gmail.com?subject=Order%20Excel" class="btn">Pesan Sekarang</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 Akbar Semono | Digital Products
+    </div>
+
+</body>
+</html>
